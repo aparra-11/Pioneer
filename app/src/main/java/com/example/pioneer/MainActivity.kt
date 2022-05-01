@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 if (edit.text.toString() == "André") {
-                    Log.d("testLogs", "im in")
                     text.setTextColor(resources.getColor(R.color.blue))
                     button.setBackgroundColor(resources.getColor(R.color.blue))
                 } else if (edit.text.toString() == "Tiago") {
