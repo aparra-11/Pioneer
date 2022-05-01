@@ -19,8 +19,6 @@ class MainActivity : AppCompatActivity() {
         val edit = findViewById<EditText>(R.id.main_activity_edittext)
         val button = findViewById<Button>(R.id.main_activity_button)
         button.setOnClickListener {
-            Log.d("testLogs", edit.text.toString())
-            Log.d("testLogs", (edit.text.toString() == "André").toString())
             text.text = edit.text.toString()
         }
 
