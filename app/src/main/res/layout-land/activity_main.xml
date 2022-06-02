@@ -8,45 +8,47 @@
 
     <ImageView
         android:id="@+id/main_activity_imageView"
-        android:layout_width="239dp"
-        android:layout_height="0dp"
+        android:layout_width="228dp"
+        android:layout_height="148dp"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginBottom="35dp"
         android:src="@drawable/mindera"
-        app:layout_constraintBottom_toTopOf="@+id/main_activity_edittext"
+        app:layout_constraintBottom_toBottomOf="@+id/main_activity_edittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></ImageView>
 
     <TextView
         android:id="@+id/main_activity_textview"
+        style="@style/mainStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="36dp"
         android:text="Hello World!"
         android:textColor="@color/green"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_activity_edittext"
-        style="@style/mainStyle"/>
+        app:layout_constraintStart_toStartOf="@+id/main_activity_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_edittext" />
 
     <EditText
         android:id="@+id/main_activity_edittext"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="291dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="128dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/main_activity_button"
-        app:layout_constraintStart_toStartOf="@+id/main_activity_textview" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/main_activity_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginTop="24dp"
         android:text="Click me!"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_activity_edittext"
         app:layout_constraintTop_toBottomOf="@+id/main_activity_edittext" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
